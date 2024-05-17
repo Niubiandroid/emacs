@@ -1,0 +1,16 @@
+(add-to-list 'load-path
+	     (expand-file-name (concat user-emacs-directory "lisp")))
+
+(require 'init-startup)
+(defconst *is-mac* (eq system-type 'darwin))
+(defconst *is-linux* (eq system-type 'gnu/linux))
+(defconst *is-windows* (or (eq system-type 'ms-dos) (eq system-type 'windows-nt)))
+
+作者：第253页图灵笔记
+链接：https://juejin.cn/post/7085254713595133960
+来源：稀土掘金
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+(require 'init-elpa)
+(require 'init-package)
+(require 'init-ui)
+

@@ -1,0 +1,6 @@
+cd ..
+ls
+ls -la
+la
+ls
+rm .emacs
